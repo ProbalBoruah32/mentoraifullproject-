@@ -248,67 +248,90 @@ npx serve .
 URL:
 
 http://localhost:3000
+📱 4. ANDROID APPLICATION — FULL GUIDE (WebView Removed)
 
-📱 4. ANDROID APPLICATION — FULL GUIDE
+MentorAI includes a secure Kotlin-based Android application that integrates with the AI backend and provides an intuitive user flow with login, profile, and secure native logic through JNI.
 
-MentorAI includes a secure Kotlin-based Android app with WebView.
+🔽 Step 1 — Clone the Android App Repository
+git clone https://github.com/ProbalBoruah32/mentoraiapplicationwork.git
+cd mentoraiapplicationwork
 
-🔒 JNI URL Protection
+🧰 Step 2 — Open the Project in Android Studio
 
-Backend URL stored in mentorai.cpp:
+1️⃣ Open Android Studio
+2️⃣ Click Open Project
+3️⃣ Select the folder:
+
+mentoraiapplicationwork/
+
+
+4️⃣ Allow Gradle to sync completely
+
+Your Android environment is ready.
+
+🔐 JNI Security Layer (Backend URL Protection)
+
+To prevent exposure of sensitive endpoints, the backend URL is stored in native C++ code inside mentorai.cpp.
+
+Kotlin retrieves it through:
 
 private external fun getWebUrl(): String
 
 
-This prevents reverse engineering.
+This method provides:
 
-🌐 WebView Loads App
-WebView(context).apply {
-    settings.javaScriptEnabled = true
-    loadUrl(getWebUrl())
-}
+✔ Increased security
+✔ Obfuscated URL access
+✔ Protection against static code analysis
 
-📦 Build APK
+▶ Step 3 — Run the App on an Emulator or Physical Device
 
-Android Studio →
+1️⃣ Connect a device (enable USB Debugging)
+or
+2️⃣ Start an Android Emulator
+
+Then click:
+
+Run ▶
+
+
+The app will launch with:
+
+✔ Login screen
+✔ App logo transition
+✔ Main interface
+✔ Profile icon and user state
+
+📦 Step 4 — Build the APK
+
+In Android Studio:
 
 Build → Build APK(s)
 
 
-Output:
+APK output:
 
 app/build/outputs/apk/debug/app-debug.apk
 
-📲 Install APK
+📲 Step 5 — Install APK on a Device
+Option A — Manual Install
+
+Transfer the APK to your phone → tap → Install.
+
+Option B — ADB Install
 adb install app-debug.apk
 
-🎬 Demonstration Videos & Screenshot Slots
-🎥 Introduction Video
+⭐ (Optional) Step 6 — Generate Signed APK for Release
 
-👉 https://youtube.com/shorts/9BJNRDeTk2s?feature=share
+If you want a production-ready APK:
 
-📹 Video Slot 2 — Backend Running & API Testing
-[ Insert Video Thumbnail Here ]
+Build → Generate Signed Bundle / APK
 
-📹 Video Slot 3 — HuggingFace Deployment Demo
-[ Insert Video Thumbnail Here ]
 
-📹 Video Slot 4 — Android App Demonstration
-[ Insert Video Thumbnail Here ]
+Follow steps to create keystore → generate release APK.
 
-📸 Screenshot Slots (Add Images Later)
-🖼️ Architecture Diagram
-[ Insert Architecture Image Here ]
+![WhatsApp Image 2025-12-10 at 04 58 40_47bc6998](https://github.com/user-attachments/assets/f205ab21-9a7b-422e-9de4-1de3ac1a6a4d)
 
-🖼️ Web Interface Screenshots
-[ Insert Screenshot #1 ]
-[ Insert Screenshot #2 ]
-[ Insert Screenshot #3 ]
-
-🖼️ Android App Screenshots
-[ Insert Android Image #1 ]
-[ Insert Android Image #2 ]
-[ Insert Android Image #3 ]
 
 🤝 Credits
 
