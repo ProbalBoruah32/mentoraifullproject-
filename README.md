@@ -1,4 +1,4 @@
-
+https://youtube.com/shorts/9BJNRDeTk2s?feature=share
 
 🧠 What is MentorAI?
 
@@ -95,7 +95,7 @@ Your API is now available at:
 http://localhost:5000
 
 📽️ 📌 VIDEO SLOT 2 — Backend Running + API Testing
-[VIDEO 2 INSERT HERE]
+
 
 ☁️ 2. DEPLOY BACKEND TO HUGGING FACE (LIVE API HOSTING)
 
