@@ -1,51 +1,159 @@
-https://youtube.com/shorts/9BJNRDeTk2s?feature=share
+🌟 MentorAI: 
+
+AI-Powered Communication Assessment Ecosystem 🗣️
+A Complete End-to-End Platform for Real-Time Speech Analysis, Intelligent Scoring, and Skill Improvement
+🛡️ Project Status & Technology Stack
+Category	Status	Tech Used
+Project Status	✔️ Active	—
+Backend	✔️ Node.js, HuggingFace	Whisper ASR
+AI / ML	✔️ Integrated	Whisper + Scoring Engine
+Frontend / Mobile	✔️ Web App + Android	Kotlin + JNI
+🗺️ Table of Contents
+
+🌟 MentorAI Overview
+
+🚀 Core Features & User Benefits
+
+🧱 System Architecture & Data Flow
+
+💻 Technology Stack
+
+⚙️ Backend Setup (mentorai-backend)
+
+☁️ Deploy Backend on Hugging Face
+
+🌐 Web Application Setup
+
+📱 Android Application Guide
+
+🎬 Demonstration Videos & Screenshot Slots
+
+🤝 Credits
+
+📄 Technical Documentation Slot
+
+🌟 MentorAI Overview: A Communication Revolution
+
+MentorAI is a fully integrated, AI-powered communication assistant built to evaluate and dramatically improve speaking skills.
+It moves beyond simple transcription by offering deep linguistic analysis, intelligent scoring, and interactive learning tools.
+
+Our mission is to combine:
+
+advanced AI
+
+real-time processing
+
+intelligent feedback
+
+cross-platform deployment
+
+…into a single ecosystem that empowers people to master communication.
 
 🧠 What is MentorAI?
 
-MentorAI is a fully integrated AI-powered communication assistant built to evaluate and improve speaking skills.
+MentorAI is an AI-driven communication assessment platform built to analyze and score speaking proficiency.
 
-This project combines:
+It includes:
 
-🎤 Real-time mic transcription
+🎤 Real-time Microphone Transcription
+🤖 Whisper ASR (Speech-to-Text)
+🧮 AI-based Scoring Engine (0–10 scale)
+📱 Android App with WebView + JNI URL Protection
+🌐 Fully Hosted Backend on HuggingFace
 
-🤖 Whisper ASR (speech-to-text)
+🚀 Core Features & User Benefits
+✅ Evaluation Features
+Feature	Description
+Segment-by-Segment Scoring	Breaks long audio/video into parts and scores each individually.
+AI Scoring Engine	Computes fluency, clarity, pace, pronunciation.
+Audio/Video Upload Evaluation	Accepts recorded files for deep analysis.
+Translation Support	Helps practice multilingual communication.
+Whisper ASR Integration	Ultra-accurate transcription engine.
+🎯 User Benefits
+Benefit	Focus
+✔ Practice Speaking	Interactive, real-time improvement.
+✔ Improve Pronunciation	Analyze phonetic accuracy.
+✔ Boost Fluency	Pace and pause detection.
+✔ Track Progress	Numerical scoring over time.
+✔ Guided Feedback	Actionable suggestions for improvement.
+🧱 System Architecture & Data Flow
 
-🧮 AI scoring engine
+MentorAI’s architecture is modular, flexible, and interconnected.
 
-📱 Android app with secure WebView + JNI
+📁 Project Structure
 
-🌐 Frontend web application
-
-☁️ Deployed backend on Hugging Face
-
-MentorAI helps users:
-
-✔ Practice speaking
-✔ Get scores between 0–10
-✔ Improve pronunciation
-✔ Upload audio/video for evaluation
-✔ View segment-by-segment scoring
-
-This README covers EVERYTHING — installation, deployment, architecture, flow, and app usage.
-
-🧩 PROJECT STRUCTURE
 MentorAI /
- ├── mentorai-backend/           # Node.js backend + Whisper ASR + AI scoring
- ├── mentoraiapplicationwork/    # Frontend web application (HTML + CSS + JS)
- └── android-app/                # Secure Android app with WebView + JNI
+
+ ├── mentorai-backend/           # Node.js backend + Whisper ASR + AI scoring engine
+ 
+ ├── mentoraiapplicationwork/    # Frontend scoring interface & audio/video workflow
+ 
+ └── android-app/                # Secure Android app using WebView + JNI
+
+🏗️ Architecture Diagram 
 
 
-Each module is built to work independently but integrates seamlessly to form a complete ecosystem.
+<img width="1536" height="1024" alt="40f591b5-bf63-4bc2-b369-bff421166937" src="https://github.com/user-attachments/assets/71c46094-a03a-4dc8-bc81-0a3539df8f2c" />
 
-⚙️ 1. BACKEND (mentora-backend) — Complete Setup Guide
 
-The backend is the core engine of MentorAI:
+🔄 Data Flow Diagram 
+graph TD
 
-✔ Handles uploads
-✔ Runs Whisper ASR
-✔ Segments audio
-✔ Scores speech
-✔ Returns feedback
+    A[👤 User] -->|1. Speaks / Uploads| B(📱 Android App / 🌐 Web Frontend)
+    
+    B -->|2. API Call (HTTPS)| C(☁️ Hugging Face Space)
+    
+    C -->|3. Route Request| D[🧠 Backend API (Node.js)]
+    
+    D -->|4. Speech-to-Text| E[🤖 Whisper ASR Module]
+    
+    E -->|5. Transcription| F[🧮 AI Scoring Engine]
+    
+    F -->|6. Score & Feedback (JSON)| D
+    
+    D -->|7. Response| B
+    
+    B -->|8. Display Results (UI)| A
+
+🌀 Data Flow Explained
+LIVE MIC MODE
+
+User speech
+→ Browser SpeechRecognition
+→ Intermediate text
+→ Local scoring engine
+→ Result displayed instantly
+
+UPLOAD MODE
+
+Audio/Video
+→ Backend
+→ Whisper ASR
+→ Segmentation
+→ AI scoring
+→ JSON response
+
+💻 Technology Stack
+Component	Technology	Role
+Backend	Node.js (Express)	API + ASR processing
+Speech Processing	Whisper ASR	High accuracy transcription
+Deployment	HuggingFace Spaces	Docker-based global hosting
+Mobile	Android (Kotlin) + JNI	Secure WebView container
+File Handling	Multer	Upload management
+Environment	dotenv	Secure variable storage
+⚙️ 1. BACKEND SETUP (mentorai-backend)
+
+The backend is responsible for:
+
+Whisper ASR
+
+File uploads
+
+Segmentation
+
+Scoring
+
+Feedback generation
 
 🛠 Step 1 — Clone Backend
 git clone https://github.com/ProbalBoruah32/mentorai-backend.git
@@ -54,64 +162,24 @@ cd mentorai-backend
 📦 Step 2 — Install Dependencies
 npm install
 
-
-Installed automatically:
-
-express
-
-multer
-
-axios
-
-whisper models
-
-cors
-
-dotenv
-
-🔐 Step 3 — Environment Setup
-
-Create .env file:
-
+🔐 Step 3 — Create .env
 PORT=5000
 HF_TOKEN=your_huggingface_token
 HF_MODEL=openai/whisper-small
 
 
-Get token:
-👉 https://huggingface.co/settings/tokens
+Token → https://huggingface.co/settings/tokens
 
 ▶️ Step 4 — Start Backend
 node server.js
 
 
-Success message:
+Expected:
 
 Backend running on port 5000
 
-
-Your API is now available at:
-
-http://localhost:5000
-
-📽️ 📌 VIDEO SLOT 2 — Backend Running + API Testing
-
-
-☁️ 2. DEPLOY BACKEND TO HUGGING FACE (LIVE API HOSTING)
-
-Hosting your backend online allows:
-
-✔ Android app → Online scoring
-✔ Web app → Upload & evaluate from anywhere
-✔ No server required on your system
-
-☁️ Step 1 — Create a HF Space
-
-Go to:
-
-👉 https://huggingface.co/spaces
-
-Create new:
+☁️ 2. DEPLOY BACKEND ON HUGGING FACE
+☁️ Step 1 — Create a HuggingFace Space
 
 SDK: Docker
 
@@ -120,9 +188,6 @@ Name: mentorai-backend
 Visibility: Public
 
 🐳 Step 2 — Add Dockerfile
-
-Create a file named Dockerfile:
-
 FROM node:18
 WORKDIR /app
 COPY package*.json ./
@@ -132,11 +197,11 @@ EXPOSE 7860
 CMD ["node", "server.js"]
 
 
-Modify server.js to use HF port:
+Modify backend:
 
 const PORT = process.env.PORT || 7860;
 
-🔁 Step 3 — Push to HF Using Git
+🔁 Step 3 — Push to HuggingFace
 git init
 git remote add origin https://huggingface.co/spaces/YourUser/mentorai-backend
 git add .
@@ -144,169 +209,93 @@ git commit -m "Deploy MentorAI Backend"
 git push origin main
 
 
-HuggingFace builds → deploys → gives live URL:
+Your API becomes public at:
 
 https://yourname-mentorai-backend.hf.space
 
-📽️ 📌 VIDEO SLOT 3 — Hugging Face Deployment Walkthrough
-[VIDEO 3 INSERT HERE]
-
-🌐 3. FRONTEND (mentoraiapplicationwork) — Full Setup
-
-The frontend allows:
-
-✨ Real-time mic recording
-✨ Live transcript
-✨ Scoring AI
-✨ Upload audio/video
-✨ File segmentation scoring
-✨ Translation system
-
-⬇ Step 1 — Clone Frontend
+🌐 3. WEB APPLICATION SETUP (mentoraiapplicationwork)
+⬇ Step 1 — Clone
 git clone https://github.com/ProbalBoruah32/mentoraiapplicationwork.git
 cd mentoraiapplicationwork
 
-💻 Step 2 — Start Local Server
+🔗 Step 2 — Connect to Backend
+const API_BASE_URL = "https://yourname-mentorai-backend.hf.space";
 
-(Optional)
-
+💻 Step 3 — Optional Local Preview
 npx serve .
 
 
-Frontend URL:
+URL:
 
 http://localhost:3000
 
-🔗 Step 3 — Connect Frontend to Backend
-
-In script.js:
-
-const API_BASE_URL = "https://yourname-mentorai-backend.hf.space";
-
 📱 4. ANDROID APPLICATION — FULL GUIDE
 
-Android app uses WebView + JNI for secure usage.
+MentorAI includes a secure Kotlin-based Android app with WebView.
 
-🔒 C++ (JNI) URL Protection
+🔒 JNI URL Protection
 
-Your URL is encoded inside:
-
-mentorai.cpp
-
-
-The Kotlin side reads it using:
+Backend URL stored in mentorai.cpp:
 
 private external fun getWebUrl(): String
 
-🌐 WebView Loads AI App
+
+This prevents reverse engineering.
+
+🌐 WebView Loads App
 WebView(context).apply {
     settings.javaScriptEnabled = true
     loadUrl(getWebUrl())
 }
 
-👤 Login + Profile Icon + Startup Flow
+📦 Build APK
 
-The app includes:
-
-Login page
-
-MentorAI logo screen
-
-WebView loading
-
-Profile bubble in top-right
-
-Toast notifications
-
-📦 HOW TO BUILD APK
-
-1️⃣ Open in Android Studio
-2️⃣ Select:
+Android Studio →
 
 Build → Build APK(s)
 
 
-APK saved at:
+Output:
 
 app/build/outputs/apk/debug/app-debug.apk
 
-
-or release version.
-
-📲 INSTALL APK ON YOUR PHONE
-Method A — File Manager
-
-Copy → Tap → Install
-
-Method B — ADB:
+📲 Install APK
 adb install app-debug.apk
 
-📽️ 📌 VIDEO SLOT 4 — Android App Demonstration
-[VIDEO 4 INSERT HERE]
+🎬 Demonstration Videos & Screenshot Slots
+🎥 Introduction Video
 
-🧱 5. ARCHITECTURE (Detailed)
-                ┌──────────────────┐
-                │  Android App     │
-                │  WebView + JNI   │
-                └───────┬──────────┘
-                        │ loads
-                        ▼
-                ┌──────────────────┐
-                │ Frontend (Web)   │
-                │ HTML / CSS / JS  │
-                └───────┬──────────┘
-                        │ API Calls
-                        ▼
-                ┌──────────────────┐
-                │  Backend API     │
-                │ Node.js + ASR    │
-                │ Whisper + Scoring│
-                └───────┬──────────┘
-                        │ Deployment
-                        ▼
-                ┌──────────────────┐
-                │ HuggingFace Space│
-                │ Docker Backend   │
-                └──────────────────┘
+👉 https://youtube.com/shorts/9BJNRDeTk2s?feature=share
 
-🔥 6. DATA FLOW EXPLAINED
-LIVE MIC MODE
-User Speaks → Browser → SpeechRecognition API → Text → Score → Feedback
+📹 Video Slot 2 — Backend Running & API Testing
+[ Insert Video Thumbnail Here ]
 
-UPLOAD MODE
-Audio/Video File → Sent to Backend → Whisper ASR → Segmented Analysis → Score Returned
+📹 Video Slot 3 — HuggingFace Deployment Demo
+[ Insert Video Thumbnail Here ]
 
-ANDROID MODE
-App → WebView → Loads Hosted Frontend → Uses HuggingFace Backend
+📹 Video Slot 4 — Android App Demonstration
+[ Insert Video Thumbnail Here ]
 
+📸 Screenshot Slots (Add Images Later)
+🖼️ Architecture Diagram
+[ Insert Architecture Image Here ]
 
-Everything is combined into a seamless end-to-end pipeline.
+🖼️ Web Interface Screenshots
+[ Insert Screenshot #1 ]
+[ Insert Screenshot #2 ]
+[ Insert Screenshot #3 ]
 
-🏆 7. FEATURES INCLUDED
-✔ Real-time mic transcription
-✔ AI scoring (local & backend modes)
-✔ Fallback scoring when backend unavailable
-✔ File upload scoring
-✔ Segment-by-segment evaluation
-✔ Whisper ASR support
-✔ Multi-language support
-✔ Secure Android WebView
-✔ HuggingFace deployment
-✔ UI animations
-✔ Full SPA navigation
-🤝 8. CREDITS
+🖼️ Android App Screenshots
+[ Insert Android Image #1 ]
+[ Insert Android Image #2 ]
+[ Insert Android Image #3 ]
 
-Developed by: Probal Boruah
-MentorAI – 2025
+🤝 Credits
 
-🎉 README IS COMPLETE
+Developed by:
+👉 Probal Boruah
+MentorAI — 2025
 
-This version is:
+📄 Technical Documentation (PDF Slot)
+[ Insert Documentation PDF Link Here ]
 
-✔ Large
-✔ Detailed
-✔ Industry-level
-✔ Includes video insertion points
-✔ Covers everything in your project
-✔ Zero missing steps
-✔ Perfect for GitHub & portfolio
