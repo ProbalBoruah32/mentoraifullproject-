@@ -8,6 +8,13 @@ Project Status	✔️ Active	—
 Backend	✔️ Node.js, HuggingFace	Whisper ASR
 AI / ML	✔️ Integrated	Whisper + Scoring Engine
 Frontend / Mobile	✔️ Web App + Android	Kotlin + JNI
+
+
+<img width="1024" height="1024" alt="mentor_ai_logo" src="https://github.com/user-attachments/assets/6560ad35-0a5c-4204-9305-38fa38af2cdc" />
+click here to see our demo https://youtube.com/shorts/9BJNRDeTk2s?feature=share
+
+
+
 🗺️ Table of Contents
 
 🌟 MentorAI Overview
@@ -60,6 +67,7 @@ It includes:
 🧮 AI-based Scoring Engine (0–10 scale)
 📱 Android App with WebView + JNI URL Protection
 🌐 Fully Hosted Backend on HuggingFace
+training dashboard https://huggingface.co/prob12/whisper_trainin4_language/tensorboard
 
 🚀 Core Features & User Benefits
 ✅ Evaluation Features
@@ -77,6 +85,10 @@ Benefit	Focus
 ✔ Track Progress	Numerical scoring over time.
 ✔ Guided Feedback	Actionable suggestions for improvement.
 🧱 System Architecture & Data Flow
+<img width="1252" height="757" alt="image" src="https://github.com/user-attachments/assets/ca7ac5da-c237-43a6-a788-d0e60977231c" />
+https://colab.research.google.com/drive/1tYlVIqwibpUkZkI7Pob5RxUxsxRo9d0-?usp=sharing      initial train 
+
+
 
 MentorAI’s architecture is modular, flexible, and interconnected.
 
@@ -127,10 +139,15 @@ User speech
 UPLOAD MODE
 
 Audio/Video
+
 → Backend
+
 → Whisper ASR
+
 → Segmentation
+
 → AI scoring
+
 → JSON response
 
 💻 Technology Stack
@@ -141,6 +158,7 @@ Deployment	HuggingFace Spaces	Docker-based global hosting
 Mobile	Android (Kotlin) + JNI	Secure WebView container
 File Handling	Multer	Upload management
 Environment	dotenv	Secure variable storage
+
 ⚙️ 1. BACKEND SETUP (mentorai-backend)
 
 The backend is responsible for:
@@ -154,6 +172,8 @@ Segmentation
 Scoring
 
 Feedback generation
+<img width="1433" height="827" alt="image" src="https://github.com/user-attachments/assets/9c6546f7-4f07-4379-afcb-4c68233b1171" />
+ click here to watch how run it https://youtu.be/T6JRS9pWQiI
 
 🛠 Step 1 — Clone Backend
 git clone https://github.com/ProbalBoruah32/mentorai-backend.git
