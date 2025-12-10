@@ -1,3 +1,8 @@
+![Status](https://img.shields.io/badge/Project%20Status-Active-brightgreen)
+![Build](https://img.shields.io/badge/Build-Passing-success)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Platform-Android](https://img.shields.io/badge/Platform-Android%20%7C%20Web-blueviolet)
+
 🌟 MentorAI: 
 
 AI-Powered Communication Assessment Ecosystem 🗣️
@@ -60,6 +65,12 @@ cross-platform deployment
 
 MentorAI is an AI-driven communication assessment platform built to analyze and score speaking proficiency.
 
+![Whisper ASR](https://img.shields.io/badge/AI-Whisper%20ASR-orange)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
+![HuggingFace](https://img.shields.io/badge/Deploy-HuggingFace-yellow)
+![Android](https://img.shields.io/badge/Mobile-Kotlin-green)
+
+
 It includes:
 
 🎤 Real-time Microphone Transcription
@@ -106,6 +117,9 @@ MentorAI /
 
 
 <img width="1536" height="1024" alt="40f591b5-bf63-4bc2-b369-bff421166937" src="https://github.com/user-attachments/assets/71c46094-a03a-4dc8-bc81-0a3539df8f2c" />
+![API Ready](https://img.shields.io/badge/API-REST%20Ready-blue)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED)
+![Security](https://img.shields.io/badge/Security-URL%20Protected-red)
 
 
 🔄 Data Flow Diagram 
@@ -326,6 +340,12 @@ adb install app-debug.apk
 If you want a production-ready APK:
 
 Build → Generate Signed Bundle / APK
+![Status](https://img.shields.io/badge/Project%20Status-Active-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Web-blueviolet)
+![Whisper ASR](https://img.shields.io/badge/AI-Whisper%20ASR-orange)
+![HuggingFace](https://img.shields.io/badge/Deploy-HuggingFace-yellow)
+![API Level](https://img.shields.io/badge/Android%20API-24--35-blue)
 
 
 Follow steps to create keystore → generate release APK.
@@ -333,12 +353,125 @@ Follow steps to create keystore → generate release APK.
 ![WhatsApp Image 2025-12-10 at 04 58 40_47bc6998](https://github.com/user-attachments/assets/f205ab21-9a7b-422e-9de4-1de3ac1a6a4d)
 
 
+📱 Android Application (APK Download + Installation Guide)
+
+The MentorAI Android application is provided as a compiled release build to allow evaluators and users to experience the platform directly on a mobile device.
+
+This APK has been tested and confirmed to work on:
+
+Android API Level: 35 (Android 14)
+
+Minimum Supported API Level: 24+
+
+Architecture: ARM64 / Universal Build
+
+Package: app-release.apk
+
+📥 Download the APK
+
+You can download the official build here:
+
+👉 Download app-release.apk
+🔗 https://drive.google.com/file/d/1ZNBD_HVJ9_yvcL83zxKhrPisYfw5jBVV/view?usp=sharing
+
+File Details
+
+Property	Value
+File Name	app-release.apk
+Source Folder	C:\Users\pb168\AndroidStudioProjects\mentorai\app\release\app-release.apk
+Build Type	Release
+Platform	Android
+Status	Ready to Install
+📲 How to Install on Your Android Device
+
+Follow these steps to install MentorAI on any modern Android device:
+
+1️⃣ Download the APK
+
+Download app-release.apk from the link above.
+
+2️⃣ Open the File
+
+Navigate to your Downloads folder and tap the file.
+
+3️⃣ Allow Installation Permissions
+
+If prompted, enable:
+
+Settings → Security → Install unknown apps
+
+4️⃣ Install the Application
+
+Tap Install and wait for installation to complete.
+
+5️⃣ Launch MentorAI
+
+Find it in:
+
+App Drawer → MentorAI
+
+⚠️ Important Notice About Backend Functionality
+
+Some features in the APK depend on a backend server for:
+
+Whisper ASR (speech-to-text)
+
+AI scoring
+
+File evaluation (audio/video)
+
+Translation
+
+Segment analysis
+
+📌 On a mobile device, the APK cannot access your personal localhost backend (http://localhost:5000
+).
+
+This means:
+
+Feature	Behavior Without Online Backend
+Live mic scoring	Partially works (local scoring fallback)
+Upload & Score (ASR)	Disabled / Limited
+Segment scoring	Disabled / Limited
+Backend translation	Disabled
+
+To achieve full functionality, the user must connect the app to a public backend URL such as:
+
+Hugging Face Space deployment
+
+Render / Vercel backend
+
+Custom server
+
+Once deployed, the backend URL can be configured in the application’s settings or internal configuration file to enable all AI features.
+
+📝 Why APK Is Hosted on Google Drive
+
+GitHub may block APK uploads due to:
+
+File-size restrictions
+
+Branch protection rules
+
+LFS limitations
+
+To ensure reliable access for judges and reviewers, the APK is hosted externally via Google Drive.
+
+This ensures:
+
+✔ 100% download success
+✔ Direct installation
+
+
 🤝 Credits
 
 Developed by:
 👉 Probal Boruah
 MentorAI — 2025
+<img width="515" height="838" alt="image" src="https://github.com/user-attachments/assets/2d498cd2-177f-4ee8-b4d2-da20cbe3ff57" />
+
+<img width="521" height="825" alt="Screenshot 2025-12-10 081533" src="https://github.com/user-attachments/assets/d7160031-a1c1-470d-9fc5-9d524c8a6d4f" />
+
 
 📄 Technical Documentation (PDF Slot)
-[ Insert Documentation PDF Link Here ]
 
