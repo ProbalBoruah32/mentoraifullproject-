@@ -472,6 +472,5 @@ MentorAI — 2025
 
 <img width="521" height="825" alt="Screenshot 2025-12-10 081533" src="https://github.com/user-attachments/assets/d7160031-a1c1-470d-9fc5-9d524c8a6d4f" />
 
-
-📄 Technical Documentation (PDF Slot)
+mentorai.docs in the repository is the document of our project 
 
