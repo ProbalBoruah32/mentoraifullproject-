@@ -467,6 +467,9 @@ This ensures:
 
 Developed by:
 👉 Probal Boruah
+   Adarsh sharma
+   Ankit Mishra 
+   Abhipriya 
 MentorAI — 2025
 <img width="515" height="838" alt="image" src="https://github.com/user-attachments/assets/2d498cd2-177f-4ee8-b4d2-da20cbe3ff57" />
 
